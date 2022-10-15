@@ -1,6 +1,8 @@
 #include <iostream>
 #include <fstream>
 
+/* change the authorization of [noReadableFile] bofore testing. */
+
 int main(int argc, char **argv) {
 	if (argc == 4) {
 		/* 1. read the whole content from the file to the string
