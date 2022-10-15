@@ -2,9 +2,6 @@
 #include "HumanA.hpp"
 #include "HumanB.hpp"
 
-//1. While HumanA takes the Weapon in its constructor, HumanB doesn’t.
-//2. HumanB may not always have a Weapon, whereas HumanA will always be armed.
-
 int main() {
 	{
 		std::cout << "\n   * ROUND 1 *   " << std::endl;
