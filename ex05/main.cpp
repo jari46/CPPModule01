@@ -6,31 +6,32 @@
 */
 
 int main(void) {
-	Harl harl;
+	{
+		Harl harl;
 
-	std::cout << "\n* Harl complains for your DEBUGging. *" << std::endl;
-	harl.complain("DEBUG");
+		std::cout << "\n\n* Harl complains for your DEBUGging. *" << std::endl;
+		harl.complain("DEBUG");
 
-	std::cout << "\n* Harl complains to give you INFORMATION. *" << std::endl;
-	harl.complain("INFO");
+		std::cout << "\n\n* Harl complains to give you INFORMATION. *" << std::endl;
+		harl.complain("INFO");
 
-	std::cout << "\n* Harl complains to WARN you. *" << std::endl;
-	harl.complain("WARNING");
+		std::cout << "\n\n* Harl complains to WARN you. *" << std::endl;
+		harl.complain("WARNING");
 
-	std::cout << "\n* Harl complains to inform you of the ERROR. *" << std::endl;
-	harl.complain("ERROR");
+		std::cout << "\n\n* Harl complains to inform you of the ERROR. *" << std::endl;
+		harl.complain("ERROR");
+	}
+	{
+		Harl harl;
+		
+		std::cout << "\n\n* Harl complains for your DEBUGging. *" << std::endl;
+		harl.complainFilter("DEBUG");
 
-	Harl harl2;
+		std::cout << "\n\n* Harl complains for your DEBUGging. *" << std::endl;
+		harl.complainFilter("WARNING");
 
-	std::cout << "\n* Harl2 complains to WARN you, again. *" << std::endl;
-	harl2.complain("WARNING");
+		std::cout << "\n\n* Harl complains for your DEBUGging. *" << std::endl;
+		harl.complainFilter("...?");
+	}
 
-	std::cout << "\n* Harl2 complains to inform you of the ERROR. *" << std::endl;
-	harl2.complain("ERROR");
-
-	std::cout << "\n* Harl2 complains for your DEBUGging, again. *" << std::endl;
-	harl2.complain("DEBUG");
-
-	std::cout << "\n* Harl2 complains to give you INFORMATION, again. *" << std::endl;
-	harl2.complain("INFO");
 }

@@ -3,6 +3,13 @@
 
 #include <iostream>
 
+enum level {
+	DEBUG,
+	INFO,
+	WARNING,
+	ERROR
+};
+
 class Harl {
 	private:
 		static void debug(void);
@@ -12,6 +19,7 @@ class Harl {
 
 	public:
 		void complain(std::string level);
+		void complainFilter(std::string level);
 };
 
 #endif /* HARL_HPP */
